@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+	<title>Tin Tức Bóng Đá </title>
+	 <link rel="stylesheet" type="text/css" href="newcss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class='menu' title='Menu'><span style='font-size:50px;position:absolute;top:1px;left:-48px;'>Menu</span></div>
+	
+<div id='css-menu'>
+<div id='cssmenu'>
+<ul id="menu1">
+  <li class='home'><span class='close-menu' style='font-size:26px;font-weight:400;position:relative' title='Close'>&#8801; <span style='font-size:18px;font-weight:700;position:absolute;top:17px;left:33px; '>Menu</span></span></li>
+  <li id="trongnuoc"><a href='#' title='Quocte'><span>Trong Nước </span></a></li>
+   <li id="quocte"><a href='#' title='trongnuoc'><span>Quốc Tế</span></a></li>
+   <li id="bangxep"><a href='bangxephang.html' title='About This Blog'><span>Bảng Xếp Hạng</span></a>
+      
+   </li>
+   <li id="giaidau"><a href='#' title='More'><span>Giải Đấu</span></a>
+     
+   </li>
+  <li id="hautruong"><a href='#' title='Hậu trường' ><span>Hậu Trường</span></a></li>
+   <li id="video"><a href='#' title='Quocte'><span>Video</span></a></li>
+    <li id="khac"><a href='#' title='Quocte'><span>Khác</span></a></li>
+<li id="chuyennhuong"><a href='#' title='Pasang Iklan'><span>Chuyển Nhượng Cầu Thủ</span></a></li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+$(function() {  
+    $('.menu').click(function () {
+    $('#css-menu').css({left:'0'});
+});
+    $('.close-menu').click(function() {
+    $('#css-menu').css({left:'-340px'});
+});
+ });
+</script>
+<script >
+    $( function() {
+    $( "#menu1" ).sortable();
+    $( "#menu1" ).disableSelection();
+  } ); 
+</script>
+</script>
+
+<marquee direction="down" style="width: 12%;height: 1500px;float: right;" ><img src="bong.jpg"  id="imgSmile" style="width: 100%; height:200px;border-radius: 70%;"></marquee>
+<div >
+ <h2 style="position: relative;left: 600px;">Bảng xếp hạng bóng đá</h2>
+  <table class="table table-dark" style="width: 500px;  position: relative;left: 500px;">
+    <tr>
+      <th>XH</th>
+      <th>CLB</th>
+      <th>TR</th>
+      <th>T</th>
+      <th>H</th>
+      <th>B</th>
+      <th>BT</th>
+      <th>BB</th>
+      <th>HS</th>
+      <th>Đ</th>
+    </tr>
+  </table>
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script >
+    $(document).ready(function(){
+      $.ajax({
+        url:"data.json",
+        dataType:"json",
+        success:function(data){
+          $(data.users).each(function(index,value){
+            var record="<tr><td>"+value.XH+"</td><td>"+
+              value.CLB+"</td><td>"+value.TR+"</td><td>"+
+                value.T+"</td><td>"+value.H+"</td><td>" +value.B+"</td><td>"+value.BT+ "</td><td>"+value.BB+"</td><td>"+value.HS+"</td><td>"+value.Đ+"</td></tr>";     ;
+
+                $("table").append(record);
+
+          });
+        }
+      });
+    })
+  </script>
+	
+</div>
+<div id="noidung" style="position: relative;top: 5px;">
+<div class="gallery">
+  <a href="#lucaku">
+    <img src="lu1.jpg" alt="Cinque Terre" >
+  </a>
+  <div class="desc"><b>CĐV tìm ra mấu chốt khiến Lukaku chơi tệ ở MU</b></div>
+</div>
+
+
+<div id="tin" style="position: relative;right: -502px;top: -360px;">
+<div class="gallery">
+  <a href="#ro">
+    <img src="ro1.jpg" alt="Cinque Terre" >
+  </a>
+  <div class="desc"><b>Dường như với các cầu thủ Real Madrid như Toni Kroos, việc nhắc tới CR7</b></div>
+</div>
+
+
+<div id="tin" style="position: relative;left: 0px;">
+<div class="gallery">
+  <a href="#ars">
+    <img src="as1.png" alt="Cinque Terre" >
+  </a>
+  <div class="desc"><b>Nhận định Sporting Lisbon vs Arsenal (23h55 ngày 25/10): Phá dớp lịch sử?</b></div>
+</div>
+</div>
+    <div id="tin" style="position: relative;top:-20px;">
+<div class="gallery">
+  <a href="#ars">
+    <img src="as1.png" alt="Cinque Terre" >
+  </a>
+  <div class="desc"><b>Nhận định Sporting Lisbon vs Arsenal (23h55 ngày 25/10): Phá dớp lịch sử?</b></div>
+</div>
+</div>
+<div id="tintin" style="position: relative;left: -753px;top: -280px;">
+<div class="gallery">
+  <a href="#nhatban">
+    <img src="nhat1.jpg" alt="Cinque Terre" >
+  </a>
+  <div class="desc"><b>Nhận định U19 Nhật Bản vs U19 Iraq 16h00 ngày 25/10 (VCK U19 châu Á 2018)</b></div>
+</div>
+</div>
+<div id="tintin" style="position: relative;left:-375px;top:-542px;">
+<div class="gallery">
+  <a href="#tintuc">
+    <img src="acc1.jpg" alt="Cinque Terre" >
+  </a>
+  <div class="desc"><b>Nhận định AC Milan vs Betis 23h55 ngày 25/10 (Europa League 2018/19)</b></div>
+</div>
+</div>
+</div>
+<div class="mu">
+	<div id="lucaku">
+            <h1> Bóng đá 24h</h1>
+	<b>Điều gì khiến bản hợp đồng đắt giá, học trò cưng của huấn luyện viên Mourinho tịt ngòi 8 trận liên tiếp trong vòng hơn 1 tháng vừa qua? </b>
+	<br>
+	<img src="lu1.jpg" id="anh">
+	<br>
+	<i>Tính cả cuộc tiếp đón Juventus ở vòng bảng Champions League, Romelu Lukaku đã tịt ngòi 8 trận liên tiếp trên mọi đấu trường. Phong độ tệ hại, nhưng tiền đạo người Bỉ vẫn chắc suất đá chính trong đội hình của Jose Mourinho do trong tay ông không còn trung phong cắm nào tốt hơn.</i>
+	<br>
+	<img src="lu2.jpg" id="anh">
+	<br>
+	<i>Ở màn đọ sức với nhà đương kim vô địch Serie A, Lukaku gần như mất hút. Tiền đạo trị giá 70 triệu bảng của MU phải chờ đến quãng thời gian cuối hiệp đấu thứ 2 mới có thể tung ra cú sút đi vọt xà khung thành đội khách. </i>
+	<br>
+	<img src="lu3.jpg" id="anh">
+	<br>
+	<i> Hình ảnh "sát thủ" cao lớn, nhanh nhẹn trong màu áo Everton đã không còn. Thay vào đó là Lukaku mờ nhạt cùng khả năng dứt điểm tệ hại trước những cơ hội tưởng chừng không thể bỏ lỡ.</i>
+	<br>
+	<img src="lu4.jpg" id="anh">
+	<br>
+	<i>Nhiều cổ động viên (CĐV) phát hiện ra rằng Lukaku tăng cân chóng mặt kể từ khi đầu quân cho Man Utd. Nhìn bằng mắt thường cũng có thể nhận ra cơ thể của tiền đạo sinh năm 1993 đậm hơn nhiều so với khi còn khoác áo CLB chủ sân Goodison.</i>
+	<br>
+	<img src="lu5.jpg" id="anh">
+	<br>
+	<i>Lukaku 4 năm trước và Lukaku hiện tại. Anh ta tăng cường quá nhiều cơ bắp. Điều này không giúp ích gì cho một cầu thủ ở vị trí tiền đạo," CĐV Imran nhận xét.</i>
+	<br>
+	<img src="lu6.jpg" id="anh">
+	<br>
+	<i> "Lukaku 4 năm trước và Lukaku hiện tại. Anh ta tăng cường quá nhiều cơ bắp. Điều này không giúp ích gì cho một cầu thủ ở vị trí tiền đạo," CĐV Imran nhận xét.</i>
+	<br>
+	<img src="lu7.jpg" id="anh">
+    <br>
+    <i> Lần cuối cùng Lukaku ghi bàn cho MU tại Premier League đã diễn ra cách đây hơn 1 tháng. Đó là trận thắng 2-1 của "Quỷ đỏ" trước Watford diễn ra vào ngày 15/9.</i>
+	</div>
+
+</div>
+<div class="mu" style="position: relative;">
+	<div id="ro">
+<h1> Bóng đá 24h</h1>
+		<b>Dường như với các cầu thủ Real Madrid như Toni Kroos, việc nhắc tới Cristiano Ronaldo đang là điều cấm kỵ.</b>
+		<p>Sau khi chia tay Ronaldo trong mùa Hè vừa qua, Real Madrid lập tức đối mặt với một cơn khủng hoảng rất lớn trong mùa giải năm nay. Sau 9 vòng đấu tại La Liga mùa này, Los Blacos chỉ mới giành được 14 điểm.</p>
+		<img src="ro1.jpg" id="anh">
+		<br>
+		<i style="position: relative;left: 160px;"> Kroos và nhiều cầu thủ khác tại Real không muốn nhắc tới Ronaldo.</i>
+		<br>
+		Vì điều này, truyền thông đã liên tục đặt câu hỏi liệu rằng Los Blancos có đang nhớ Real hay không. Tuy nhiên những câu hỏi này đang khiến các ngôi sao của Real rất khó chịu. Cụ thể sau khi Isco tuyên bố: Isco: 'Chúng tôi không thể khóc vì một người đã đi', thì đến lượt Kroos phát biểu rằng:
+		<br>
+
+"Chúng tôi đã khởi đầu mùa giải năm nay rất tốt, và từng có được những trận đấu ghi tới 3-4 bàn. Khi đó chẳng ai nói gì về việc nhớ anh ta (Ronaldo) cả."
+<br>
+
+"Thật chẳng có ý nghĩa gì khi nói về một cầu thủ không còn ở đây. Anh ta là một cầu thủ tuyệt vời, có thể là một trong những cầu thủ quan trọng nhất trong lịch sử của đội bóng, nhưng điều đó chẳng thể giúp ích được gì cho chúng tôi bây giờ."
+<br>
+<b>Video tài năng của Ronaldo:</b>
+<br>
+<video controls="auto">
+	<source src="ro8.mp4" type="video/mp4" >
+</video>
+</div>
+</div>
+<div class="mu">
+	<div id="ars">
+            <h1> Bóng đá 24h</h1>
+		<b>Nhận định Sporting Lisbon vs Arsenal (23h55 ngày 25/10): Phá dớp lịch sử?</b>
+		<br>
+		<p>Màn đối đầu giữa Sporting Lisbon vs Arsenal được đánh giá sẽ định đoạt ngôi đầu bảng E tại Europa League 2018 khi cả hai đội đều có trình độ hơn hẳn những đội bóng còn lại.</p>
+		<b>Quyết chiến vì ngôi đầu</b>
+		<br>
+		Sau hai trận, Sporting Lisbon và Arsenal đều giữ thành tích toàn thắng. Arsenal ghi 7 bàn vào lưới Vorskla và Qarabag, trong khi Sporting Lisbon cũng ghi mỗi trận hai bàn vào lưới đối thủ. Cũng vì trình độ hơn hẳn so với các đối thủ còn lại của bảng đấu nên màn đối đầu trực tiếp giữa hai đội sẽ mang tính định đoạt ngôi đầu bảng F.
+		<br>
+		<img src="as1.png" id="anh">
+		<br>
+		<i style="position: relative;left: 100px;">Nhận định Sporting Lisbon vs Arsenal - trận chiến vì ngôi đầu</i>
+		<br>
+		Sporting Lisbon có nhiều điều kiện thuận lợi hơn để bung sức nhằm giành kết quả có lợi trong trận đấu này. Họ được thi đấu trên sân nhà và trong trận đấu với Boavista tại giải đấu trong nước, họ cũng được đá trên sân nhà nên không hề e ngại vấn đề hao mòn thể lực vì di chuyển. <br>
+ 
+Trong khi đó, Arsenal sẽ phải đến Bồ Đào Nha, sau đó tiếp tục làm khách của Crystal Palace cuối tuần này tại Premier League. Mặt trận Europa League trên thực tế không hẳn là ưu tiên của "pháo thủ" mùa này, bởi chính HLV Unai Emery từ đầu mùa đã khẳng định Arsenal ưu tiên cho cuộc đua tại Premier League hơn bất cứ giải đấu nào.
+ <br>
+Trên thực tế dù được thi đấu trên sân nhà nhưng Sporting Lisbon vẫn ở thế "cửa dưới" so với Arsenal. Thầy trò Unai Emery hiện đang có phong độ ấn tượng với 10 trận toàn thắng ở mọi mặt trận. Kết quả của trận đấu sẽ phụ thuộc lớn vào quyết tâm của chính Arsenal
+<br>
+<b>Thước đo quyết tâm</b>
+<br>
+Trước trận đấu với Soporting Lisbon, HLV Unai Emery khẳng định Arsenal rất muốn giành chiến thắng trong trận đấu này: "Với chúng tôi, giải đấu này cũng rất quan trọng. Chúng tôi muốn đứng đầu bảng. Đây là trận đấu quan trọng để giúp củng cố sự tự tin của chúng tôi".
+<br>
+<img src="as2.jpg" id="anh">
+<br>
+<I>HLV Emery muốn đánh bại Sporting Lisbon để củng cố sự tự tin của các cầu thủ Arsenal</I>
+<br>
+Với tuyên bố cứng rắn đó, nhiều khả năng Arsenal sẽ bung sức trong trận đấu này nhằm giành chiến thắng ngay trên sân khách. Trong bảy trận đấu tiếp theo ở mọi đấu trường, "pháo thủ" chỉ có duy nhất một trận đấy căng gặp Liverpool, các đối thủ còn lại đều bị đánh giá không ngang tầm với "pháo thủ" nên thầy trò Unai Emery không cần quá lo lắng về chặng đường phía trước.
+ <br>
+Cũng như nhận định của HLV Emery, Arsenal rất cần củng cố lòng tin sau nhiều năm thi đấu thất vọng. Arsenal có thể không cần tung ra lực lượng mạnh nhất nhưng với lực lượng có chiều sâu, HLV Emery vẫn có đủ lựa chọn cho trận đấu này. Trên hàng công, Aubameyang nhiều khả năng được HLV Emery tiếp tục tin tưởng sau cú đúp vào lưới Leicester, trong khi Lacazette được nghỉ ngơi cho trận đấu vào cuối tuần. 
+<br>
+Sporting Lisbon dù bị đánh giá thấp hơn nhưng vẫn là một đối thủ đáng gờm, đặc biệt ở những tình huống tấn công biên với đôi cánh Nani - Carlos Mane. Điểm mạnh của đội bóng Bồ Đào Nha là sở hữu cặp trung vệ giàu kinh nghiệm thi đấu Jeremy Mathieu - Sebastian Coates, những người đã có kinh nghiệm thi đấu tại mặt trận châu lục trong màu áo các đội bóng lớn.<br>
+
+Arsenal chưa từng giành chiến thắng khi tới làm khách tại Bồ Đào Nha. Liệu thầy trò Unai Emery có phá dớp?
+<br>
+<b>Thống kê trước trận:</b>
+<Br>
+* Đây là lần đầu tiên hai đội gặp nhau kể từ mùa giải 1969-70 khi chạm trán ở vòng hai Inter-Cities Fairs Cup. Sporting khi đó hòa 0-0 trên sân nhà nhưng thua 0-3 trên sân của Arsenal.<br>
+* Arsenal chưa bao giờ thắng các đội bóng Bồ Đào Nha trên sân khách (hòa 3, thua 3).<br>
+* Sporting giành chiến thắng trong ba trận gần nhất tại Europa League, chuỗi thành tích tốt nhất kể từ tháng 10/2011.<br>
+* Unai Emery chỉ thua 1 trong 20 trận vòng bảng tại Europa League (thắng 11, hòa 8) khi dẫn dắt Valencia, Sevilla và Arsenal.<br>
+* Sáu cầu thủ khác nhau đã ghi bàn cho Arsenal tại Europa League mùa này (7 bàn) gồm Aubameyang, Ozil, Guendouzi, Smith-Rowe, Sokratis và Welbeck.<br>
+
+<b>Đội Hình ra sân</b>
+<br>
+<img src="as4.png" id="anh">
+	</div>
+</div>
+<div class="mu">
+	<div id="nhatban" style="position: relative;top">
+            <h1> Bóng đá 24h</h1>
+		<b>Nhận định U19 Nhật Bản vs U19 Iraq 16h00 ngày 25/10 (VCK U19 châu Á 2018)</b>
+		<br>
+		<b>U19 Nhật Bản vs U19 Iraq lúc 16h00 ngày 25/10 (Bảng B VCK U19 châu Á 2018): Nhận định bóng đá, ý kiến chuyên gia, dự đoán kết quả, phân tích chuyên môn, các thông tin, thống kê bên lề trước trận đấu.</b>
+		<br>
+		<img src="nhat1.jpg" id="anh">
+		<br>
+		<i style="position: relative;left: 200px;">U19 Nhật Bản vs U19 Iraq</i>
+		<br>
+		Sau 2 lượt trận, U19 Nhật Bản toàn thắng để độc chiếm ngôi đầu bảng và sớm giành vé vào vòng tứ kết. Rõ ràng, nhà ĐKVĐ vẫn chứng minh được đẳng cấp của mình. N
+		<br>
+
+
+Loạt trận cuối này hoàn toàn mang ý nghĩa thủ tục với U19 Nhật Bản. Họ hiện hơn U19 Triều Tiên 3 điểm và thắng trận đối đầu trực tiếp. Vì thế, ngay cả khi bại trận, U19 Nhật Bản vẫn giữ được ngôi đầu bởi theo luật nếu hai đội bằng điểm thì chỉ số đối đầu trực tiếp sẽ được xét đến đầu tiên để phân thứ hạng. Chính vì thế, gần như chắc chắn BHL đội bóng sẽ tung dàn cầu thủ dự bị vào sân để các trụ cột được nghỉ ngơi dưỡng sức cho trận tứ kết.<br>
+
+Với U19 Iraq, đội bóng từng 5 lần vô địch châu Á (chỉ kém U19 Hàn Quốc và U19 Myanmar), nhưng lại đang đối diện với nguy cơ dừng chân ngay vòng bảng. Hiện tại U19 Iraq mới có 1 điểm, đứng thứ 3 trên BXH. Muốn vào tứ kết, U19 Iraq cần phải đánh bại U19 Nhật Bản và hy vọng ở trận đấu cùng giờ U19 Triều Tiên thua trận trước U19 Thái Lan.<br>
+
+Tất nhiên U19 Iraq tràn đầy quyết tâm nhưng trình độ của họ khó lòng so với U19 Nhật Bản, kể cả khi đối thủ chỉ tung đội dự bị. Đánh bại U19 Nhật Bản được xem là nhiệm vụ quá tầm, nhưng để giành điểm thì nằm trong khả năng của đội bóng Tây Á.<br>
+<img src="nhat2.jpg" id="anh">
+	</div>
+</div>
+<div class="mu">
+	<div id="tintuc">
+            <h1> Bóng đá 24h</h1>
+		<b>Nhận định AC Milan vs Betis 23h55 ngày 25/10 (Europa League 2018/19)</b>
+		<p><b>AC Milan vs Betis lúc 23h55 ngày 25/10 (Bảng F Europa League/cúp C2 châu Âu 2018/19): Nhận định bóng đá, ý kiến chuyên gia, dự đoán kết quả, phân tích chuyên môn, các thông tin, thống kê bên lề trước trận đấu.</p></b>
+		<img src="acc1.jpg" id="anh">
+		<br>
+		<i style="position: relative;left: 250px;">AC Milan vs Betis</i>
+		<p><b>Nhận định bóng đá AC Milan vs Betis: 3-1</b></p>
+		Thất bại trong trận derby thành Milan cuối tuần qua chắc chắn sẽ ảnh hưởng không nhỏ tới tâm lý của AC Milan. Tuy nhiên, thầy trò HLV Gennaro Gattuso buộc phải đứng dậy sau cú ngã, để bước vào tranh tài ở đấu trường Europa League.
+		<br>
+
+
+Đối thủ của Rossoneri ở lượt trận thứ 3 bảng F Europa League 2018/2019 diễn ra vào đêm nay là Real Betis. Hiện tại, đội bóng đến từ Tây Ban Nha đang có 4 điểm/2 lượt trận, đứng ngay sau AC Milan với 2 điểm ít hơn.<br>
+
+Real Betis đã tiến bộ thấy rõ trong mấy năm trở lại đây. Và thành quả của đội bóng này chính là suất dự Europa League. Tuy nhiên, ở mùa giải năm nay, đội bóng này đang cho thấy sự chững lại.<br>
+
+Sau 9 trận đấu ở La Liga 2018/2019, thầy trò HLV Quique Setien đã thua tới 3 trận, đứng thứ 12 trên bảng xếp hạng. Trước khi bước vào tranh tài với AC Milan, đội bóng của Tây Ban Nha có chuỗi 2 trận thua liên tiếp.
+<br>
+Ở thời điểm hiện tại, nếu xét về chất lượng đội hình, danh tiếng và cả truyền thống, AC Milan đều ăn đứt Real Betis. Ngoài ra, thầy trò HLV Gennaro Gattuso còn được thi đấu trên sân nhà San Siro, nơi họ sẽ được hàng ngàn cổ động viên tiếp sức.<br>
+
+Tuy nhiên, AC Milan vẫn phải đề cao cảnh giác trước đại diện đến từ La Liga. Bởi lẽ, đoàn quân của HLV Quique Setien có thành tích thi đấu khá tốt ở sân chơi châu Âu. Thống kê chỉ ra rằng, Real Betis đang có 6 trận bất bại ở đấu trường Europa League. Ở vòng bảng Europa League mùa giải năm nay, câu lạc bộ này đã hòa Olympiacos 0-0 và đè bẹp Dudelange tới 3 bàn không gỡ.
+<br>
+
+
+
+Có thể thấy, AC Milan sẽ quyết tâm giành chiến thắng trước Real Betis để khẳng định vị thế của mình ở bảng F, qua đó hướng tới việc giành vé sớm. Nhưng, điểm yếu của họ là không duy trì được sự ổn định. Ở những thời khắc quyết định, đội bóng này vẫn chưa thiếu sự lì lợm và quyết đoán. Dẫn chứng cụ thể nhất chính là thất bại trước Inter Milan ở vòng 9 Serie A cuối tuần qua.
+<br>
+
+Ở cuộc đọ sức với Real Betis vào đêm nay, AC Milan được giới chuyên môn đánh giá cao hơn đại diện của La Liga. Với thực lực của mình, nếu chơi đúng sức thầy trò HLV Gennaro Gattuso sẽ được hưởng niềm vui thắng trận. Tuy nhiên, nếu không cải thiện được vấn đề tâm lý cũng như khả năng săn bàn thì nguy cơ Rossoneri đánh rơi điểm số hoặc trắng tay vẫn có thể xảy ra.
+<br>
+LỰC LƯỢNG
+- AC Milan:  Vắng Ivan Strinic  và  Riccardo Montolivo vì chấn thương.
+- Real Betis: Cristian Tello, Andrés Guardado, Javi García và Joaquín để ngỏ khả năng ra sân.
+<br>
+PHONG ĐỘ VÀ ĐỐI ĐẦU
+- AC Milan thắng 3, hòa 1, thua 1 trong 5 trận gần nhất.<br>
+- Real Betis bất bại 6 trận cuối cùng ở Europa League.<br>
+- Ở lần đọ sức gần nhất, Real Betis thắng 2-1 trước AC Milan trong trận giao hữu.<br>
+
+CON SỐ<br>
+6 Betis đang có phong độ không tốt trên sân khách. 6 chuyến xa nhà gần đây, CLB Tây Ban Nha trải qua 4 trận chỉ biết hòa và thua, đồng thời có tới 3 trận không ghi bàn.<Br>
+
+THÔNG TIN<Br>
+Milan: Conti và Strinic chấn thương.<Br>
+Betis: Guardado, Joaquin và Javi Garcia vắng mặt vì chấn thương.<Br>
+Theo kèo châu Á, Milan thắng 3 và thua 2 ở 5 trận gần đây; Betis thắng 3 và thua 2 ở 5 trận vừa qua.<Br>
+Theo kèo châu Á, Milan thắng 5 và thua 1 ở 6 trận sân nhà gần đây; Betis thắng 3, hòa 2 và thua 1 ở  6 trận sân khách vừa qua.
+<Br>
+ĐẶC BIỆT<Br>
+Lưới rung hiệp 1: Cả 8 trận sân nhà gần đây của Milan đều có tối thiểu 1 bàn trong hiệp 1. Việc Betis và Milan đều đang đặt mục tiêu chiến thắng cũng sẽ khiến trận đấu diễn ra sôi động và có bàn thắng sớm.<Br>
+        
+        </div>
+</div>
+
+</div>
+
+</body>
+</html>
